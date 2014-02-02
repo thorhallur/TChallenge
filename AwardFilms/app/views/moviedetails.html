@@ -1,0 +1,11 @@
+﻿<div>
+    <p><a href="/app">Back to Search</a></p>
+    <h2><strong>{{ movie.TitleName }}</strong></h2>
+    <div data-ng-repeat="storyline in storylines" class="panel panel-default">
+      <div class="panel-heading">From <strong>{{ storyline.Type }}</strong></div>
+      <div class="panel-body">
+        <p>{{ storyline.Description }}</p>
+      </div>
+    </div>
+    <div data-ng-highlighter="mjasi"></div>
+</div>

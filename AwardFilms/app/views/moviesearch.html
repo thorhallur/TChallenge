@@ -1,0 +1,11 @@
+﻿<form role="form">
+    <div class="form-group">                
+        <input type="text" class="form-control" data-ng-model="movieSearchStr" data-ng-change="searchMovies()" placeholder="Enter a Movie Title" />
+    </div>
+</form>
+
+<ul class="list-group">
+    <li data-ng-repeat="movie in movies" class="list-group-item">
+        <span class="badge">{{ movie.ReleaseYear }}</span><a data-ng-href="#/details/{{ movie.TitleId }}">{{ movie.TitleName }}</a>
+    </li>
+</ul>
